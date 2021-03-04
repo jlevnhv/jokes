@@ -1,5 +1,5 @@
 import React from 'react';
-import Categories from './Categories';
+import CategoryList from './CategoryList';
 
 class Jokes extends React.Component {
   constructor(props) {
@@ -38,14 +38,14 @@ class Jokes extends React.Component {
       return <div>Loading... </div>
      } else {
        return (
-         <ul>
+         <div className="jokeList">
           {jokes.map(joke => (
-            <li key={joke.id}>
+            <div key={joke.id} className="joke">
               <div>{joke.title}: {joke.full_text}</div>
-              <Categories categories={joke.categories} />
-            </li>
+              <CategoryList categories={joke.categories} />
+            </div>
            ))}
-         </ul>
+         </div>
        );
      }
   }

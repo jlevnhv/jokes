@@ -1,18 +1,18 @@
 import React from 'react';
 
-function Categories(props) {
+function CategoryList(props) {
   const categories = props.categories;
   const categoryNames = categories.map((category) =>
-    <li key={category.id}>
+    <li key={category.id} className="categoryName">
       {category.name}
     </li>
   );
 
   return (
-    <div className="categoryNames">
+    <ul className="categoryNames">
       {categoryNames}
-    </div>
+    </ul>
   );
 }
 
-export default Categories;
+export default CategoryList;
