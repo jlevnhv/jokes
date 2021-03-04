@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#
+Joke.create(title: 'Joke One', full_text: 'This is the full joke text')
+Joke.create(title: 'Joke Two', full_text: 'This is the full joke text for joke two')
+Category.create(name: 'Clean')
+Category.create(name: 'Dirty')
+Joke.first.categories << Category.first
+Joke.second.categories << Category.second
