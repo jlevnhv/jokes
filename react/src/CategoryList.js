@@ -1,17 +1,16 @@
 import React from 'react';
+import Category from './Category';
 
 function CategoryList(props) {
   const categories = props.categories;
   const categoryNames = categories.map((category) =>
-    <li key={category.id} className="categoryName">
-      {category.name}
-    </li>
+    <Category category={category} />
   );
 
   return (
-    <ul className="categoryNames">
+    <div className="categoryNames">
       {categoryNames}
-    </ul>
+    </div>
   );
 }
 
