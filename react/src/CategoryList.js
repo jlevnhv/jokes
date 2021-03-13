@@ -8,7 +8,7 @@ function CategoryList(props) {
   );
 
   return (
-    <div className="categoryNames">
+    <div className="categoryNames d-flex flex-row">
       {categoryNames}
     </div>
   );

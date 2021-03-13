@@ -5,7 +5,9 @@ function Category(props) {
   const category = props.category;
 
   return (
-    <Button id={category.id}>{category.name}</Button>
+    <div className="p-1">
+      <Button id={category.id} size="sm">{category.name}</Button>
+    </div>
   );
 }
 

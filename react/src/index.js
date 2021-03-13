@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Jokes from './Jokes';
+import NewJokeForm from './NewJokeForm';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Jokes />
+    <NewJokeForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
