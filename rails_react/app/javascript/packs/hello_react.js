@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react';
+
 const Hello = props => (
   <div className='react-app-wrapper'>
     <img src={clockIcon} alt="clock" />
