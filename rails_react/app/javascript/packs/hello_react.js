@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react';
+import ReactDOM from 'react-dom';
 
 const Hello = props => (
   <div className='react-app-wrapper'>
-    <img src={clockIcon} alt="clock" />
     <h5 className='hello-react'>
       {props.message} {props.name}!
     </h5>
